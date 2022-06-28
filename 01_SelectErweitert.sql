@@ -1,6 +1,8 @@
+USE Northwind;
+
 SELECT Freight, Freight % 5 FROM Orders; --%: Modulo, Rest einer Division
 
-SELECT CompanyName, (Address + ' ' + City + ', ' + PostalCode + ' ' + Country) AS VolleAddresse FROM Customers; --mit + Strings (Zeichenketten) verbindet sie miteinander
+SELECT CompanyName, (Address + ' ' + City + ', ' + PostalCode + ' ' + Country) AS VolleAdresse FROM Customers; --mit + Strings (Zeichenketten) verbindet sie miteinander
 
 SELECT DISTINCT Country FROM Customers; --Datensätze einzigartig machen
 
