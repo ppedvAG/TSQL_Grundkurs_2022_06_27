@@ -72,7 +72,7 @@ SELECT * FROM Orders CROSS JOIN Customers;
 --SELF JOIN: Join mit der selben Tabelle statt mit zwei Tabellen
 SELECT emp.EmployeeID, 
 emp.FirstName + ' ' + emp.LastName AS Mitarbeiter, 
-chef.EmployeeID, 
+chef.EmployeeID as ChefID, 
 chef.FirstName + ' ' + chef.LastName AS [Chef Name]
 FROM Employees emp 
 INNER JOIN Employees chef 
@@ -81,7 +81,7 @@ ON emp.ReportsTo = chef.EmployeeID;
 --LEFT JOIN statt INNER JOIN um den Chef auch zu finden
 SELECT emp.EmployeeID, 
 emp.FirstName + ' ' + emp.LastName AS Mitarbeiter, 
-chef.EmployeeID, 
+chef.EmployeeID AS ChefID, 
 chef.FirstName + ' ' + chef.LastName AS [Chef Name]
 FROM Employees emp 
 LEFT JOIN Employees chef 
