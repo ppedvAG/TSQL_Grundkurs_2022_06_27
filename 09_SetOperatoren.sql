@@ -55,6 +55,12 @@ SELECT CompanyName, ContactName, Phone FROM Customers
 UNION ALL
 SELECT CompanyName, ContactName, Phone FROM Suppliers;
 
+--ORDER BY einfach danach
+SELECT CompanyName, ContactName, Phone FROM Customers
+UNION ALL
+SELECT CompanyName, ContactName, Phone FROM Suppliers
+ORDER BY Phone;
+
 --INTERSECT: gibt die Daten zurück die in beiden Tabellen enthalten sind
 --US, USA
 SELECT Country FROM Customers
