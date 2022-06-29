@@ -57,7 +57,7 @@ SELECT CompanyName, ContactName, Phone FROM Suppliers;
 
 --ORDER BY einfach danach
 SELECT CompanyName, ContactName, Phone FROM Customers
-UNION ALL
+UNION
 SELECT CompanyName, ContactName, Phone FROM Suppliers
 ORDER BY Phone;
 
